@@ -60,6 +60,11 @@ gtag('js', new Date());
 gtag('config', 'G-03F8ZHB8D8');
 </script>
    <link rel="manifest" href="/home/manifest.json">
+   <script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js');
+    }
+       </script>
 <style>
   
 input, select, .btn {
