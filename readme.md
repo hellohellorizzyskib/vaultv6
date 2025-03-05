@@ -32,3 +32,5 @@ UV operates under AGPL v3.
 
 > [!NOTE]
 > If you encounter an issue with the site, please report it on the repository in the Issues tab! You can also add your own links you made for the website in the [Discord server](https://discord.gg/UnDrzQQksw) or in the Discussions tab.
+
+![Alt](https://repobeats.axiom.co/api/embed/9115b92be125fe029f711108e05a77041bd565d9.svg "Repobeats analytics image")
