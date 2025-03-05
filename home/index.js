@@ -34,9 +34,10 @@ form.addEventListener("submit", async (event) => {
   const url = search(address.value, searchEngine.value);
   const proxiedUrl = __uv$config.prefix + __uv$config.encodeUrl(url);
   
-  // Redirect to output.html and pass the proxied URL as a query parameter
-  window.location.href = `output.html?url=${encodeURIComponent(proxiedUrl)}`;
+  // Redirect to output.html instead of the proxy URL
+  window.location.href = `/output.html?url=${encodeURIComponent(proxiedUrl)}`;
 });
+
 
 
 // Autofill function with auto-submit
