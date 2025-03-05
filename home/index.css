@@ -262,6 +262,19 @@ footer a {
   opacity: 30%;
 }
 
+
+
+#canvas {
+    display: block;
+    position: fixed;  /* Cover the viewport */
+    top: 0;
+    left: 0;
+    width: 100vw;  /* 100% of the viewport width */
+    height: 100vh; /* 100% of the viewport height */
+    
+    pointer-events: none; /* Prevents canvas from interfering with interactions */
+}
+
 @keyframes wave {
   0% { margin-left: 0; }
   100% { margin-left: -1600px;}
