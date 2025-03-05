@@ -21,7 +21,7 @@ const error = document.getElementById("uv-error");
 const errorCode = document.getElementById("uv-error-code");
 
 form.addEventListener("submit", async (event) => {
-  event.preventDefault();
+  event.preventDefault(); // Prevent default navigation
 
   try {
     await registerSW();
@@ -33,10 +33,12 @@ form.addEventListener("submit", async (event) => {
 
   const url = search(address.value, searchEngine.value);
   const proxiedUrl = __uv$config.prefix + __uv$config.encodeUrl(url);
-  
-  // Redirect to output.html instead of the proxy URL
+
+  // Redirect to output.html instead of directly opening the proxy
   window.location.href = `/output.html?url=${encodeURIComponent(proxiedUrl)}`;
 });
+
+
 
 
 
