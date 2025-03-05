@@ -98,7 +98,7 @@ const quotes = [
     "\"Dickhead Glorious Taft III; Cause of death: epiglottitis\" - ajh",
     "\"Mcdonalda mcodoble recpie -1 meat -top bred -botom bed -che   ese -mcdurmick sose -plciejcle -cook it\" - cts3696",
     "\"And then hunt and then spit and then scrap yourself and then hunt for bears and then lick the honey then take off our pants and poop on top of nature\" - southernctrailfan",
-    "\"DADDY CUM ME INSIDE THE BAT’S PENIS BEFORE IT TURNS INTO A TESTED LIGHT BULB AND EXPLODE\" - southernctrailfan",
+    "\"D#DDY C#M ME INSIDE THE BAT’S P###S BEFORE IT TURNS INTO A TESTED LIGHT BULB AND EXPLODE\" - southernctrailfan",
     "\"ROCCO YOU BETTA STAWT LISTENIN IF NOT YA NOT COMIN OUT NO MOA\" - a random guy in nj",
     "\"9 + 10 = 21\" - ajh",
     "\"go do great things\" - ajh",
@@ -142,7 +142,9 @@ const quotes = [
     "\"bookmark the link doc pls\" - ajh",
     "\"hey you! bookmark the link doc pls\" - ajh",
     "\"if you want more links, bookmark the link doc pls\" - ajh",
-    "\"if you want more links, bookmark the link doc\" - ajh"
+    "\"if you want more links, bookmark the link doc\" - ajh",
+    "\"v7 coming soon\" - ajh",
+    "\"anybody know sum fine shyts\" - ajh"
 ];
 const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
 document.querySelector('.quote-thing').textContent = randomQuote;
