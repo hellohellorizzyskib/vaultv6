@@ -195,6 +195,20 @@ gtag('config', 'G-03F8ZHB8D8');
     <script src="index.js" defer></script>
             <canvas id="canvas"></canvas>
       <iframe class="search-output" id="output-specific" src=""></iframe>
+
+          <iframe id="proxy-frame" style="width: 100%; height: 100vh; border: none;"></iframe>
+
+    <script>
+        // Get the URL parameter from the query string
+        const params = new URLSearchParams(window.location.search);
+        const url = params.get("url");
+
+        if (url) {
+            document.getElementById("proxy-frame").src = url;
+        } else {
+            document.body.innerHTML = "<h1>Error: No URL provided</h1>";
+        }
+    </script>
       <nav>
         <a href="/home"><i class="fa-solid fa-house"></i></a>
         <a href="/home/g.html"><i class="fa-solid fa-gamepad"></i></a>
@@ -211,44 +225,7 @@ gtag('config', 'G-03F8ZHB8D8');
          <a href="https://discord.gg/UnDrzQQksw">discord server</a>
       </footer> -->
       
-      <script>
-const uvPrefix = '/home/'
-const ls = window.top.location.search;
-const urlParams = new URLSearchParams(ls);
-    
-let urlToProxy = urlParams.get('url');
-    
-const xorEncode = {
-        encode(str) {
-            if (!str) return str;
-            return encodeURIComponent(
-                str
-                    .toString()
-                    .split('')
-                    .map((char, ind) =>
-                        ind % 2 ? String.fromCharCode(char.charCodeAt() ^ 2) : char
-                     )
-                    .join('')
-            );
-        }
-    };
-
-
-if (urlToProxy){
-    let proxiedUrl = uvPrefix + xorEncode.encode(urlToProxy);
-    console.log('src is now ' + proxiedUrl)
-    document.getElementById('output-specific').src = proxiedUrl;
-} else{
-  const iframe = document.getElementById("output-specific");
-  const storedUrl = sessionStorage.getItem("searchUrl");
-  console.log("Retrieved search URL:", storedUrl);
-  if (storedUrl) {
-      iframe.src = storedUrl;
-  } else {
-      console.error("No search URL found.");
-  }
-}
-     </script>
+   
 
 <div class="modal-overlay" id="modalOverlay" onclick="closeModal()"></div>
 <div class="modal" id="settingsModal">
