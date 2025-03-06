@@ -372,8 +372,16 @@ document.addEventListener("DOMContentLoaded", async () => {
                 const gameCard = document.createElement("div");
                 gameCard.classList.add("game-card");
                 const imageUrl = game.image;
+<<<<<<< HEAD
+                                      // Create the game card's inner HTML        
+                      const proxiedUrl = `/go/${btoa(game.link)}`;
+
+                      gameCard.innerHTML = `
+                          <a href="${proxiedUrl}" target="_blank">
+=======
                 gameCard.innerHTML = `
                            <a href="${game.link}">
+>>>>>>> dbce898fbbcfe1b7a4a03d0318ff9646e288fc24
                            <img src="${imageUrl}" alt="${game.name}" onerror="this.onerror=null    ;this.src='/home/icons/placeholder.png';">
                            <p>${game.name}</p>
                      </a>
