@@ -373,7 +373,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 gameCard.classList.add("game-card");
                 const imageUrl = game.image;
                 gameCard.innerHTML = `
-                     <a href="/home/go/?url=${encodeURIComponent(game.link)}">
+                           <a href="(game.link)">
                            <img src="${imageUrl}" alt="${game.name}" onerror="this.onerror=null    ;this.src='/home/icons/placeholder.png';">
                            <p>${game.name}</p>
                      </a>
